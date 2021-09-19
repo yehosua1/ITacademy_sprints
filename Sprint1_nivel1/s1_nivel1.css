@@ -1,0 +1,170 @@
+
+body {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*.............................................................................*/
+.cabeza {
+    background-color: black;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cabecera1{
+    background-color: #2d4059;
+    margin: 10px;   
+    padding: 10px;
+    width: 100%;
+    flex-wrap: nowrap; 
+}
+
+.cabecera1__elemento{
+    background-color: #ea5455;
+    height: 20px;
+    margin: 10px;
+
+}
+.cabecera1__elemento--medio{
+    background-color: #ea5455;
+    height: 20px;
+    margin: 20px 10px 20px 10px;
+
+
+}
+.cabecera2{
+    background-color: #f07b3f; 
+    margin: 10px;  
+    padding: 10px;
+    width: 100%;
+   
+}
+
+.cabecera2__menu{
+    background-color: #fed460;
+    height:20px;
+    margin: 10px;
+}
+
+/*.............................................................................*/
+
+.main {
+    background-color: #fee228;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1{
+    background-color: #09506f;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+}
+
+.container1__elemento {
+    background-color: #62969c;
+    height: 20px;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.container1__elemento--abajo {
+    background-color: #a3ddcb;
+    height: 20px;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+
+.container2{
+    background-color: #fd7b54;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;  
+}
+
+.container2__elemento{
+    background-color: #fdb36b;
+    height: 20px;
+    margin: 10px;
+
+}
+
+/*.............................................................................*/
+.footer {
+    background-color: black;
+    margin: 15px;
+    padding:10px;
+}
+
+.textfooter{
+    background-color: #fdc764;
+    margin: 10px ;
+    height: 20px;
+}
+/*.............................................................................*/
+
+/* ------------Small devices (portrait tablets and large phones, 600px and up)-----------*/
+@media (min-width: 600px) {
+
+    .cabecera1 {
+        display: flex;
+
+    }
+    .cabecera1__elemento {    
+        width: 20%;
+    }
+
+    .cabecera1__elemento--medio {  
+        width: 60%;
+        margin: 10px;
+    }
+
+    .main  {
+        background-color: #feff03;
+    }  
+
+    .container1{
+        background-color: #4e4e6a;
+        width: 100%;
+    }
+
+    .container1__elemento {
+        background-color: #1f6cb0;
+        width: calc(50% - 20px);
+    }
+
+    .container1__elemento--abajo{
+        background-color:#70a3c4 ;
+    }
+    .container2{
+        background-color: #f73f52;
+        width: 100%;
+
+    }
+    .container2__elemento{
+        background-color: #feea85;
+    }
+
+    
+}
+ 
+/*------------ Large devices (laptops/desktops, 992px and up) ------------------*/
+@media (min-width: 992px) {
+    .main  {
+        background-color: black;
+        flex-wrap: nowrap;
+    } 
+    .container1{
+        width: 70%;
+    }
+    .container2{
+        width: 30%;
+    }
+ }

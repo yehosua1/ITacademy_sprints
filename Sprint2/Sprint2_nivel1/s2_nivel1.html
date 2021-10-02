@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <!-- TITULO del PROYECTO -->
+            <title> Sprint 2 Nivel 1</title>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+            <!-- CSS Style Sheet -->
+            <link href="s2_nivel1.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <!-- Font Inconsolata -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+            <!-- Font open sans -->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@325&display=swap" rel="stylesheet">
+            
+            <!-- .....Script..... -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <!-- ...... Para el Contact -->
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script>
+              // Prevent dropdown menu from closing when click inside the form
+              $(document).on("click", ".navbar-right .dropdown-menu", function(e){
+                e.stopPropagation();
+              });
+            </script>
+
+       
+        </head>
+        
+        <body>
+             <!-- esta sería el container -->
+            <div class="container-fluid bg-black">
+                <!-- esta sería la fila  con el navegador-->
+                <nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top">
+                    
+                    <!-- ................ esta sería la section del logo ..................-->
+                    <a href="#" class="navbar-brand">
+                        <img src="imagenes_s2n1/Logo Edgar.jpg" alt="Edgar Escobedo Logo" widht="30" height="24" class="d-inline-block align-bottom"/>
+                    </a>
+                    
+                    <!-- .............esta sería la seccion del boton y menu..................-->
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#toggleMobileMenu"
+                        aria-controls="toggleMobileMenu"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <!-- ¿ms = margin start? -->
+                        <ul class="navbar-nav d-flex text-center">
+                            <li>
+                                <a class="nav-link" href="#">.Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#about_page">.About</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#work_page">.Work</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contact_page">.Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    
+                    <!--.................Login & Sign-up buttoms ................-->
+                    
+                    <!--.................login buttoms with social media................--> 
+                    <div class="login_section">    
+                        <li class="login">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">Login</a>
+                            <ul class="dropdown-menu form-wrapper">					
+                                <li>
+                                <form action="/examples/actions/confirmation.php" method="post">
+                                    <p class="hint-text">Sign in with your social media account</p>
+                                    <div class="form-group social-btn clearfix">
+                                    <a href="#" class="btn btn-primary pull-left"><i class="fa fa-facebook"></i> Facebook</a>
+                                    <a href="#" class="btn btn-info pull-right"><i class="fa fa-twitter"></i> Twitter</a>
+                                    </div>
+                                    <div class="or-seperator"><b>or</b></div>
+                                    <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Username" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" required="required">
+                                    </div>
+                                    <input type="submit" class="btn btn-primary btn-block" value="Login">
+                                    <div class="form-footer">
+                                    <a href="#">Forgot Your password?</a>
+                                    </div>
+                                </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </div> 
+                    
+                    <!--.................Sign-up buttoms with social media................-->
+                    <div class="signup_section">
+                        <li class="sign-up">
+                            <a data-toggle="dropdown" class="dropdown-toggle"href="#">Sign up</a>
+                            <!-- class="btn btn-primary dropdown-toggle get-started-btn mt-1 mb-1" -->
+                            <ul class="dropdown-menu form-wrapper">					
+                                <li>
+                                    <form action="/examples/actions/confirmation.php" method="post">
+                                    <p class="hint-text">Fill in this form to create your account!</p>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Username" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Password" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="password" class="form-control" placeholder="Confirm Password" required="required">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms &amp; Conditions</a></label>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary btn-block" value="Sign up">
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    </div> 
+
+                </nav> <!-- fin de navbar  -->
+                
+                <!--............................... Home  ............................-->
+                <div class="row home">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2 titulo_del_texto" >
+                        Edgar <br> Escobedo 
+                    </div>
+                    <div class="col-sm-6 texto_home text-center">
+                        Estudiante en la IT Academy de Barcelona <br>
+                        Aprendiendo Front-End / React <br>
+                        Realizando el primer ejercicio con Bootstrap
+                    </div>
+                    <div class="col-sm-2 habilidades text-end">
+                        HTML <br> CSS <br> JAVASCRIPT
+                    </div>
+                    <div class="col-sm-1"> </div>
+                </div> <!-- fin de la seccion row home -->
+                 
+                <!--.................... Slider con 4 imagenes ...................-->
+
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-10 text-center">
+                        <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="imagenes_s2n1/Front End development.jpg" class="d-block w-100" alt="Slide 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes_s2n1/Web Responsive 1.jpg" class="d-block w-100" alt="Slide 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes_s2n1/html imagen.jpg" class="d-block w-100" alt="Slide 3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="imagenes_s2n1/Web Responsive 2.jpg" class="d-block w-100" alt="Slide 4">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselWithControls" role="button" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselWithControls" role="button" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </a>
+                        </div>                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+
+                <!-- ..................... ABOUT ..........................-->
+
+                <div class="row about"  id="about_page">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2 titulo_del_texto text-center" >
+                        About
+                    </div>
+                    <div class="col-sm-5 texto_about text-start text-justify-sm">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation 
+                        ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
+                        in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at
+                        vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis 
+                        dolore te feugait nulla facilisi.
+                    </div>
+                    <div class="col-sm-3 text-center logo_react">
+                        <img src="imagenes_s2n1/Logo_react.png" alt="React_Logo" widht="150" height="120"/>
+                    </div>
+                    <div class="col-sm-1"> </div>
+                </div> <!-- fin de la seccion row about -->
+
+                <!-- ............................. Work ............................. -->    
+                <div class="row work"  id="work_page">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2 titulo_del_texto text-center" >
+                        Work
+                    </div>
+                    <div class="col-sm-3 texto_about text-start text-justify-sm texto_work">
+                        <img src="imagenes_s2n1/imagen_work.jpg" class="d-block w-100" alt="work_image" />
+                        <br> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                        laoreet dolore magna aliquam erat volutpat. 
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-3 texto_about text-start text-justify-sm">
+                        <img src="imagenes_s2n1/imagen_work.jpg" class="d-block w-100" alt="work_image" />
+                        <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                        laoreet dolore magna aliquam erat volutpat. 
+                    </div>
+                    <div class="col-sm-2"> </div>
+                </div> <!-- fin de la seccion row about -->
+                
+                <!-- ............................. Contact ............................. -->    
+
+
+
+                <!-- Contact Us Section -->
+                <section class="Material-contact-section section-padding section-dark" id="contact_page">
+                    <div class="container-fluid bg-black ">
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-2  titulo_del_texto text-center">
+
+                                <!-- Section Titile -->
+                                <div class="col-md-12 wow animated fadeInLeft" data-wow-delay=".2s">
+                                    <h1 class="section-title">Contact</h1>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-8">
+                                <!-- contact form -->
+                                <div class="col-xl-6 wow animated fadeInRight" data-wow-delay=".2s">
+                                    <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                                        <!-- Name -->
+                                        <div class="form-group label-floating">
+                                        <label class="control-label" for="name">Name</label>
+                                        <input class="form-control" id="name" type="text" name="name" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                        </div>
+                                        <!-- email -->
+                                        <div class="form-group label-floating">
+                                        <label class="control-label" for="email">Email</label>
+                                        <input class="form-control" id="email" type="email" name="email" required data-error="Please enter your Email">
+                                        <div class="help-block with-errors"></div>
+                                        </div>
+                                        <!-- Subject -->
+                                        <div class="form-group label-floating">
+                                        <label class="control-label">Subject</label>
+                                        <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Please enter your message subject">
+                                        <div class="help-block with-errors"></div>
+                                        </div>
+                                        <!-- Message -->
+                                        <div class="form-group label-floating">
+                                            <label for="message" class="control-label">Message</label>
+                                            <textarea class="form-control" rows="3" id="message" name="message" required data-error="Write your message"></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <!-- Form Submit -->
+                                        <div class="form-submit mt-5">
+                                            <button class="btn btn-common" type="submit" id="form-submit">
+                                                <i class="material-icons mdi mdi-message-outline"></i> <a class="enviar">Send Message</a>
+                                            </button>
+                                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </form>
+                                </div>                      
+                            </div>
+                            <div class="col-sm-1"></div>
+
+                        </div> <!-- fin del roww de contacto -->
+                    </div>
+                    
+                </section>
+
+
+
+
+
+
+
+            </div>  <!-- fin del container -->
+            
+
+                
+
+          
+
+            
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+        </body>
+
+            <!-- ............................. Contact Form ....................... -->    
+
+            
+           
+    </html>  
